@@ -8,8 +8,9 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "Fuwari",
-	subtitle: "Demo Site",
+	title: "拾光小阁", // 网站标题
+	// title: "Fuwari", // 网站标题，已被注释掉
+	subtitle: "qwq",
 	lang: "zh_CN", // 语言代码，例如 'en', 'zh_CN', 'ja' 等
 	themeColor: {
 		hue: 250, // 主题色的默认色相，范围 0 到 360。例如红色: 0，蓝绿色: 200，青色: 250，粉色: 345
@@ -31,11 +32,11 @@ export const siteConfig: SiteConfig = {
 	},
 	favicon: [
 		// 留空数组以使用默认 favicon
-		// {
-		//   src: '/favicon/icon.png',    // favicon 的路径，相对于 /public 目录
-		//   theme: 'light',              // （可选）'light' 或 'dark'，仅在有不同模式 favicon 时设置
-		//   sizes: '32x32',              // （可选）favicon 的尺寸，仅在有不同尺寸时设置
-		// }
+		{
+			src: "https://a723572.webp.li/2025/08/16/20250816160056267.png", // favicon 的路径，相对于 /public 目录
+			theme: "light", // （可选）'light' 或 'dark'，仅在有不同模式 favicon 时设置
+			sizes: "32x32", // （可选）favicon 的尺寸，仅在有不同尺寸时设置
+		},
 	],
 };
 
@@ -63,6 +64,13 @@ export const profileConfig: ProfileConfig = {
 			// 如果未包含对应图标集，需要安装
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://x.com/bear36609893920?",
+		},
+		{
+			name: "Email",
+			icon: "mdi-light:email", // 图标代码，参见 https://icones.js.org/
+			// 如果未包含对应图标集，需要安装
+			// `pnpm add @iconify-json/<icon-set-name>`
+			url: "mailto:ljsh666@outlook.com",
 		},
 		{
 			name: "Steam",
